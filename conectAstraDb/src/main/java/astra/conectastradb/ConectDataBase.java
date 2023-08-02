@@ -10,8 +10,8 @@ public class ConectDataBase {
    public static void main(String[] args) {
          // Create the CqlSession object:
          try (CqlSession session = CqlSession.builder()
-            .withCloudSecureConnectBundle(Paths.get("C:\\Users\\USUARIO\\Documents\\NetBeansProjects\\conectAstraDb\\src\\main\\java\\astra\\secure-connect-pepe.zip"))
-            .withAuthCredentials("hdZggsrGAbkyyNBxjtOJPAdf","A03fQ7d4RzCnSGiE.st0fk2UZGLafNf1EXFjsjnyzyJaKsnco3lthUIxAs8I8ZktHKoq-JrzdKEgdJIqDcWbUA.38,PAdD37OQfAdsCpp_znJzmwK4ILL8LNttKEU6Dk")
+            .withCloudSecureConnectBundle(Paths.get("URL_ZIP"))
+            .withAuthCredentials("Your credencials astra has")
             .build()) {
             // Select the release_version from the system.local table:
             String keyspace = "pepes";
